@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public float time = 0.0f;
     public Player player;
     public TextMeshProUGUI LifeText;
-    public TextMeshProUGUI SpawnText;
+    public TextMeshProUGUI ShieldText;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +27,8 @@ public class GameManager : MonoBehaviour
 
     void UpdateCanvas()
     {
-        LifeText.text = "Lifes: " + player.lives;
-        SpawnText.text = "Shields: " + player.shields;
+        LifeText.text = "Vidas: " + player.lives;
+        ShieldText.text = "Escudos: " + player.shields;
     }
 
     private void CreateEnemy()

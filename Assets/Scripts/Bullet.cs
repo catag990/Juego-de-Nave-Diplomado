@@ -8,13 +8,23 @@ public class Bullet : MonoBehaviour
 {
     float DirectionX;
     Vector2 Dir;
+    public Player playerScript;
+
     // Start is called before the first frame update
     void Start()
     {
-        DirectionX = Random.Range(-0.5f, 0.5f);
-        int DirectionY = 2;
-        Dir = new Vector2(DirectionX, DirectionY);
-        Dir.Normalize();
+
+        if (playerScript.currentBulletIndex != 3)
+        {
+            Debug.Log(playerScript.currentBulletIndex);
+            DirectionX = Random.Range(-0.5f, 0.5f);
+            int DirectionY = 2;
+            Dir = new Vector2(DirectionX, DirectionY);
+            Dir.Normalize();
+        }
+        else {
+            Dir = new Vector2(0, 2);
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +41,7 @@ public class Bullet : MonoBehaviour
     }
 
 
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision != null)
@@ -38,7 +49,11 @@ public class Bullet : MonoBehaviour
             if (collision.gameObject.CompareTag("Enemy"))
             {
                 Destroy(collision.gameObject);
-                Destroy(this.gameObject);
+                if (playerScript.currentBulletIndex == 3)
+                {
+                    Destroy(this.gameObject);
+                }
+                
 
             }
         }

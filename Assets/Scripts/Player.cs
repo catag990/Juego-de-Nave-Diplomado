@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public GameObject Shield;
 
     public List<Bullet> bullets; //Lista de balas usando el script Bullet
+    public int currentBulletIndex = 0;
 
     //To use audio
     public AudioManager audioManager;
@@ -85,7 +86,14 @@ public class Player : MonoBehaviour
     }
 
     void Fire() {
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > canFire)
+        if (currentBulletIndex == 3) {
+            if (Input.GetKey("space")) {
+                Instantiate(BulletPref, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
+                canFire = Time.time + fireRate;
+                
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && Time.time > canFire)
         {
             Instantiate(BulletPref, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
             canFire = Time.time + fireRate;
@@ -95,20 +103,31 @@ public class Player : MonoBehaviour
         
     }
 
-
     
     public void ChangeWeapon() {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             BulletPref = bullets[0].gameObject;
+            currentBulletIndex = 0;
+            fireRate = 0.025f;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             BulletPref = bullets[1].gameObject;
+            currentBulletIndex = 1;
+            fireRate = 0.025f;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3)) {
             BulletPref = bullets[2].gameObject;
+            currentBulletIndex = 2;
+            fireRate = 0.025f;
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            BulletPref = bullets[3].gameObject;
+            currentBulletIndex = 3;
+            fireRate = 0.025f;
+}
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -120,12 +139,13 @@ public class Player : MonoBehaviour
 
                 if (ShieldInUse) { 
                     Shield.SetActive(false);
+                    ShieldInUse = false;
+                    
                 }
 
                 else if (lives > 1)
                 {
                     lives--;
-                    Debug.Log("Lives: " + lives);
                 }
                 else {
                     lives--;
