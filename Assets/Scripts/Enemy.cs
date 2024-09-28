@@ -30,6 +30,10 @@ public class Enemy : MonoBehaviour
         transform.Translate(Dir * speed * Time.deltaTime);
     }
 
+    void OnBecameInvisible()
+    {
+        Destroy(this.gameObject);
+    }
 
-    
+
 }

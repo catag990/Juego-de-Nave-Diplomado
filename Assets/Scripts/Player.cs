@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -15,6 +16,8 @@ public class Player : MonoBehaviour
     public GameObject BulletPref; //Bala que se va a disparar
 
     public GameObject Shield;
+    public List<GameObject> Weapons;
+    public GameObject weapon;
 
     public List<Bullet> bullets; //Lista de balas usando el script Bullet
     public int currentBulletIndex = 0;
@@ -22,6 +25,21 @@ public class Player : MonoBehaviour
     //To use audio
     public AudioManager audioManager;
     public AudioSource actualAudio;
+
+    public int points;
+    public string weaponName;
+
+    public enum ShipState
+    {
+        FullHealth,
+        SlightlyDamaged,
+        Damaged,
+        HeavilyDamaged,
+        Destroyed
+    }
+    public ShipState shipState;
+    public List<Sprite> shipSprites = new List<Sprite>();
+
 
     Vector2 Dir;
 
@@ -39,12 +57,13 @@ public class Player : MonoBehaviour
         ChangeWeapon();
         UseShields();
         Fire();
+        
     }
 
     public bool ShieldInUse = false;
     public void UseShields()
     {
-        if (shields > 0 && Input.GetKeyDown("e"))
+        if (shields > 0 && Input.GetKeyDown("e") && ShieldInUse == false)
         {
             ShieldInUse = true;
             shields--;
@@ -87,14 +106,15 @@ public class Player : MonoBehaviour
 
     void Fire() {
         if (currentBulletIndex == 3) {
-            if (Input.GetKey("space")) {
+            if (Input.GetKey("space") && Time.time > canFire) {
                 Instantiate(BulletPref, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
-                canFire = Time.time + fireRate;
+                canFire = Time.time;
                 
             }
         }
         else if (Input.GetKeyDown(KeyCode.Space) && Time.time > canFire)
         {
+            
             Instantiate(BulletPref, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
             canFire = Time.time + fireRate;
 
@@ -109,26 +129,37 @@ public class Player : MonoBehaviour
         {
             BulletPref = bullets[0].gameObject;
             currentBulletIndex = 0;
+            weaponName = "bala";
+            weapon = Weapons[0].gameObject;
+            weapon.SetActive(true);
             fireRate = 0.025f;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             BulletPref = bullets[1].gameObject;
             currentBulletIndex = 1;
+            weaponName = "cohete";
+            weapon.SetActive(true);
             fireRate = 0.025f;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3)) {
             BulletPref = bullets[2].gameObject;
             currentBulletIndex = 2;
+            weaponName = "energia";
+            weapon.SetActive(true);
             fireRate = 0.025f;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             BulletPref = bullets[3].gameObject;
             currentBulletIndex = 3;
+            weaponName = "laser";
+            weapon.SetActive(true);
             fireRate = 0.025f;
-}
+        }
     }
+
+
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -145,15 +176,47 @@ public class Player : MonoBehaviour
 
                 else if (lives > 1)
                 {
+                    points -= 5;
                     lives--;
+                    ChangeShipState();
                 }
                 else {
                     lives--;
+                    ChangeShipState();
                     Destroy(this.gameObject);
                 }
             }
         }
     }
+
+    void ChangeShipState() { 
+        var currentState = shipState;
+        Debug.Log(currentState);   
+
+        var newSprite = shipSprites.Find(x => x.name == currentState.ToString());
+
+        var spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = newSprite;
+
+        switch (currentState) { 
+            case ShipState.FullHealth:
+                shipState = ShipState.SlightlyDamaged;
+                break;
+            case ShipState.SlightlyDamaged:
+                shipState = ShipState.Damaged;
+                break;
+            case ShipState.Damaged:
+                shipState = ShipState.HeavilyDamaged;
+                break;
+            case ShipState.HeavilyDamaged:
+                shipState = ShipState.Destroyed;
+                break;
+            case ShipState.Destroyed:
+                break;
+        }
+    }
+
+    
 
 
 }

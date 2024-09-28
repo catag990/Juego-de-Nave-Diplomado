@@ -21,12 +21,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: cd0e59acf69942044aad9e8fda03c3ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2197
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: cd0e59acf69942044aad9e8fda03c3ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1415383
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: cd0e59acf69942044aad9e8fda03c3ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.0066
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: cd0e59acf69942044aad9e8fda03c3ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.28942
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: cd0e59acf69942044aad9e8fda03c3ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -91,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 524418d3a9fd462439b4f1c636a96f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScript: {fileID: 5335906470044781317, guid: 7713af3ca7717d4449cb4a097674ab22, type: 3}
 --- !u!50 &2104720377153114131
 Rigidbody2D:
   serializedVersion: 4

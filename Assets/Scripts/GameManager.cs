@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public Player player;
     public TextMeshProUGUI LifeText;
     public TextMeshProUGUI ShieldText;
+    public TextMeshProUGUI WeaponText;
+    public TextMeshProUGUI PointsText;
+    public TextMeshProUGUI TimeText;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +30,11 @@ public class GameManager : MonoBehaviour
 
     void UpdateCanvas()
     {
-        LifeText.text = "Vidas: " + player.lives;
-        ShieldText.text = "Escudos: " + player.shields;
+        LifeText.text = "vidas: " + player.lives;
+        ShieldText.text = "escudos: " + player.shields;
+        WeaponText.text = "arma: " + player.weaponName;
+        PointsText.text = "puntos: " + player.points;
+        TimeText.text = "tiempo: " + ((int)Time.time);
     }
 
     private void CreateEnemy()
@@ -37,7 +43,7 @@ public class GameManager : MonoBehaviour
         if (time > spawnTime)
         {
 
-            Instantiate(enemyPrefab, new Vector3(Random.Range(-6.0f, 6.0f), 4.0f, 0), Quaternion.identity);
+            Instantiate(enemyPrefab, new Vector3(Random.Range(-6.0f, 6.0f), 3.0f, 0), Quaternion.identity);
             time = 0.0f;
         }
     }

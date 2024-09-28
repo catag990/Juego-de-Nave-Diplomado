@@ -215,6 +215,8 @@ MonoBehaviour:
   shieldDuration: 5
   BulletPref: {fileID: 8495771403201648079, guid: 6c5e1e25e8d7da848a54fa64c62d9841, type: 3}
   Shield: {fileID: 3128517148673672033}
+  Weapons: []
+  weapon: {fileID: 0}
   bullets:
   - {fileID: 81434148431501622, guid: 6c5e1e25e8d7da848a54fa64c62d9841, type: 3}
   - {fileID: 4670477964829362208, guid: 49cee67efcfceb34d9e05dcd27b6d154, type: 3}
@@ -223,6 +225,14 @@ MonoBehaviour:
   currentBulletIndex: 0
   audioManager: {fileID: 0}
   actualAudio: {fileID: 5600759055412960739}
+  points: 0
+  weaponName: 
+  shipState: 0
+  shipSprites:
+  - {fileID: 21300000, guid: dd48995ae6bd8ae49bad23561f10f55c, type: 3}
+  - {fileID: 21300000, guid: 52bba8d77410e654c87a82e6dd754b1d, type: 3}
+  - {fileID: 21300000, guid: 28d0663aa57b90c4a909a151edf8ff98, type: 3}
+  - {fileID: 21300000, guid: ab937f1d4e9a64349abc093132f2e156, type: 3}
   ShieldInUse: 0
 --- !u!50 &36123833193289676
 Rigidbody2D:
