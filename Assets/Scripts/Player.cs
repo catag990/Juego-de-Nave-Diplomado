@@ -8,10 +8,12 @@ public class Player : MonoBehaviour
     //Variables
     public float speed = 5.0f;
     public float fireRate = 0.025f;
-    public int lives = 3;
+    public int lives = 4;
     public int shields = 3;
     public float canFire = 0.0f;
     public float shieldDuration = 5.0f;
+
+    public bool powerUpInUse = false;
 
     public GameObject BulletPref; //Bala que se va a disparar
 
@@ -27,7 +29,7 @@ public class Player : MonoBehaviour
     public AudioSource actualAudio;
 
     public int points;
-    public string weaponName;
+    public string weaponName = "bala";
 
     public enum ShipState
     {
@@ -46,7 +48,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ChangeShipState();
     }
 
     // Update is called once per frame
@@ -83,7 +85,7 @@ public class Player : MonoBehaviour
         transform.Translate(Dir * speed * Time.deltaTime);
     }
 
-    //Revisa los bordes del juego, la cámara va a settear los bordes
+    //Revisa los bordes del juego, la cï¿½mara va a settear los bordes
     void CheckBoundaries() { 
         var cam = Camera.main;
         float xMax = cam.orthographicSize * cam.aspect;

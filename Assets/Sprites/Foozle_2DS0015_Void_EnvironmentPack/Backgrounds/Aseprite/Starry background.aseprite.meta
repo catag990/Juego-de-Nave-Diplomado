@@ -310,7 +310,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Starry background_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -319,7 +319,7 @@ ScriptedImporter:
         width: 641
         height: 360
       spriteId: abc3653cd9bfcbf49b7f0f9702fc72f3
-    - name: Starry background_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -328,7 +328,7 @@ ScriptedImporter:
         width: 643
         height: 360
       spriteId: 51ca312410791064d893a367c7856ada
-    - name: Starry background_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -337,7 +337,7 @@ ScriptedImporter:
         width: 641
         height: 360
       spriteId: 8eb760a7ddda3b643ac431ad53097cf0
-    - name: Starry background_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -346,7 +346,7 @@ ScriptedImporter:
         width: 641
         height: 360
       spriteId: 87eacc156efa7124ca2b4d04d16d1f7f
-    - name: Starry background_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -355,7 +355,7 @@ ScriptedImporter:
         width: 641
         height: 360
       spriteId: a357e38723392d14eb14584a267de541
-    - name: Starry background_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -364,7 +364,7 @@ ScriptedImporter:
         width: 641
         height: 360
       spriteId: 5486c62c070113044aa25e27d8c2d399
-    - name: Starry background_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -373,7 +373,7 @@ ScriptedImporter:
         width: 641
         height: 360
       spriteId: 337a69d44c1d1884f9724a71e810e62f
-    - name: Starry background_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -382,7 +382,7 @@ ScriptedImporter:
         width: 641
         height: 360
       spriteId: 3fbf495c1b615dd4e9efe968aa3aa7c2
-    - name: Starry background_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:

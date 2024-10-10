@@ -370,7 +370,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main Ship - Weapons - Big Space Gun_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -379,7 +379,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: f6d815951f821554b9ecf3a9f3221e01
-    - name: Main Ship - Weapons - Big Space Gun_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -388,7 +388,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: 1477ecc4e3217e84d9218ea6e0978385
-    - name: Main Ship - Weapons - Big Space Gun_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -397,7 +397,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: e7b317ffd94151e4288ddcf239e12dcb
-    - name: Main Ship - Weapons - Big Space Gun_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -406,7 +406,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: 6948d1cc67e1bb24697c9e3d443bbd49
-    - name: Main Ship - Weapons - Big Space Gun_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -415,7 +415,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: 3351a86eb86ff2b469f9f854a0901329
-    - name: Main Ship - Weapons - Big Space Gun_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -424,7 +424,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: fbd66616b6335154483abbfd5a89e5f6
-    - name: Main Ship - Weapons - Big Space Gun_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -433,7 +433,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: 975258b6c30393946861723104118104
-    - name: Main Ship - Weapons - Big Space Gun_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -442,7 +442,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: 2e31ff5176f873144bf2ce76057d1724
-    - name: Main Ship - Weapons - Big Space Gun_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -451,7 +451,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: 571e528a2f3f9a246b6594645452a98a
-    - name: Main Ship - Weapons - Big Space Gun_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -460,7 +460,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: dad29053d47ebbf43918e062cc5c58a5
-    - name: Main Ship - Weapons - Big Space Gun_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -469,7 +469,7 @@ ScriptedImporter:
         width: 48
         height: 48
       spriteId: c2f612028b4c9af4a963a18a5cff39cc
-    - name: Main Ship - Weapons - Big Space Gun_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:

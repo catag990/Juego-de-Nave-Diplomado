@@ -210,7 +210,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main Ship - Fighter Design_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -219,7 +219,7 @@ ScriptedImporter:
         width: 64
         height: 64
       spriteId: 74eb7b6f46b12764680cf18bd2ba0834
-    - name: Main Ship - Fighter Design_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -228,7 +228,7 @@ ScriptedImporter:
         width: 64
         height: 64
       spriteId: e39935a07656c8b4aa146b45b397b30d
-    - name: Main Ship - Fighter Design_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -237,7 +237,7 @@ ScriptedImporter:
         width: 64
         height: 64
       spriteId: 9921fac3cc435b143931a1ef367b1d79
-    - name: Main Ship - Fighter Design_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:

@@ -330,7 +330,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main Ship - Shields - Front Shield_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -339,7 +339,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: 55edea50b5fe2b3489f6c6fa427fcd54
-    - name: Main Ship - Shields - Front Shield_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -348,7 +348,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: 40632fe5ed83aa4499eb0cefb85e8fd8
-    - name: Main Ship - Shields - Front Shield_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -357,7 +357,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: ca531b5d6436fc642b414dc76fe27438
-    - name: Main Ship - Shields - Front Shield_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -366,7 +366,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: 1d1b1ecf40eadb1428d570e31b00fbb5
-    - name: Main Ship - Shields - Front Shield_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -375,7 +375,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: 8c25bd587a2e2b841b49ce1710f9bed5
-    - name: Main Ship - Shields - Front Shield_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -384,7 +384,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: ccc0575c63e66054390c04d4e26831cf
-    - name: Main Ship - Shields - Front Shield_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -393,7 +393,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: a38f7281ad6685c469d88c60adc2d50b
-    - name: Main Ship - Shields - Front Shield_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -402,7 +402,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: 650c439b7d47cca4bbc6cc3913f55fe5
-    - name: Main Ship - Shields - Front Shield_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -411,7 +411,7 @@ ScriptedImporter:
         width: 36
         height: 18
       spriteId: 4b1af3498d6475d4cafce97e4bdd84cd
-    - name: Main Ship - Shields - Front Shield_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:

@@ -450,7 +450,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main Ship - Weapons - Rockets_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -459,7 +459,7 @@ ScriptedImporter:
         width: 34
         height: 20
       spriteId: bc89d96f7a7d1db48abc88efb475bc23
-    - name: Main Ship - Weapons - Rockets_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -468,7 +468,7 @@ ScriptedImporter:
         width: 34
         height: 20
       spriteId: 5adbb7e4b6ae9514ca0e05cfcff97003
-    - name: Main Ship - Weapons - Rockets_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -477,7 +477,7 @@ ScriptedImporter:
         width: 34
         height: 21
       spriteId: 8c9859f232de54c478f649eeae905b23
-    - name: Main Ship - Weapons - Rockets_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -486,7 +486,7 @@ ScriptedImporter:
         width: 34
         height: 23
       spriteId: 60b4c7cd2b1f82a44b7b8c91378d1975
-    - name: Main Ship - Weapons - Rockets_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -495,7 +495,7 @@ ScriptedImporter:
         width: 34
         height: 24
       spriteId: f46fe7de119c25d479ff479fab11c811
-    - name: Main Ship - Weapons - Rockets_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -504,7 +504,7 @@ ScriptedImporter:
         width: 34
         height: 23
       spriteId: 877df9f1cc4930349a5da119538f885e
-    - name: Main Ship - Weapons - Rockets_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -513,7 +513,7 @@ ScriptedImporter:
         width: 34
         height: 24
       spriteId: a6e15a0ded0c60843b999a35685fa636
-    - name: Main Ship - Weapons - Rockets_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -522,7 +522,7 @@ ScriptedImporter:
         width: 34
         height: 23
       spriteId: b788f8a032c6e0046abef748b23417d6
-    - name: Main Ship - Weapons - Rockets_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -531,7 +531,7 @@ ScriptedImporter:
         width: 34
         height: 24
       spriteId: 6cee6f6b6e2e0b04aba505f04dc1a602
-    - name: Main Ship - Weapons - Rockets_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -540,7 +540,7 @@ ScriptedImporter:
         width: 34
         height: 24
       spriteId: d201b6b9013e156498ed38836d50939a
-    - name: Main Ship - Weapons - Rockets_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -549,7 +549,7 @@ ScriptedImporter:
         width: 34
         height: 24
       spriteId: d8320690a11ebcd4da4590b1df68ddc1
-    - name: Main Ship - Weapons - Rockets_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -558,7 +558,7 @@ ScriptedImporter:
         width: 35
         height: 22
       spriteId: 472c4f4838958c643b9bc3c57113d512
-    - name: Main Ship - Weapons - Rockets_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -567,7 +567,7 @@ ScriptedImporter:
         width: 37
         height: 11
       spriteId: 6b4ff7b83862d454ab9b04794e7753de
-    - name: Main Ship - Weapons - Rockets_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -576,7 +576,7 @@ ScriptedImporter:
         width: 39
         height: 5
       spriteId: 1d86688c62b07054aa9492af3db9edae
-    - name: Main Ship - Weapons - Rockets_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -585,7 +585,7 @@ ScriptedImporter:
         width: 11
         height: 5
       spriteId: 1bc5374be5b1d8f44b30e3aedf422069
-    - name: Main Ship - Weapons - Rockets_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:

@@ -250,7 +250,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main Ship - Engines - Burst Engine - Powering_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -259,7 +259,7 @@ ScriptedImporter:
         width: 10
         height: 14
       spriteId: e3a0e61515c181241884b737fc9072ee
-    - name: Main Ship - Engines - Burst Engine - Powering_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -268,7 +268,7 @@ ScriptedImporter:
         width: 10
         height: 13
       spriteId: e0b97213feeddd4469215f261ba5588e
-    - name: Main Ship - Engines - Burst Engine - Powering_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -277,7 +277,7 @@ ScriptedImporter:
         width: 10
         height: 12
       spriteId: 59e9a317276bbf94fa3c383251b2e530
-    - name: Main Ship - Engines - Burst Engine - Powering_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -286,7 +286,7 @@ ScriptedImporter:
         width: 10
         height: 11
       spriteId: 901ff6f82d9c7944d86843f794b05423
-    - name: Main Ship - Engines - Burst Engine - Powering_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -295,7 +295,7 @@ ScriptedImporter:
         width: 10
         height: 10
       spriteId: 258f6abe8c72ca9469d45583645ead14
-    - name: Main Ship - Engines - Burst Engine - Powering_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:

@@ -290,7 +290,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main ship weapon - Projectile - Zapper_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -299,7 +299,7 @@ ScriptedImporter:
         width: 6
         height: 96
       spriteId: 345ef1013bb587b49b3b40df8699268f
-    - name: Main ship weapon - Projectile - Zapper_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -308,7 +308,7 @@ ScriptedImporter:
         width: 6
         height: 96
       spriteId: 33ddedbf1251dc14ab4da530ca21b7bb
-    - name: Main ship weapon - Projectile - Zapper_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -317,7 +317,7 @@ ScriptedImporter:
         width: 6
         height: 96
       spriteId: 6c986d51baf11814da3a03a035de077e
-    - name: Main ship weapon - Projectile - Zapper_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -326,7 +326,7 @@ ScriptedImporter:
         width: 6
         height: 96
       spriteId: fb95cc6dc8bef8e479b85f985078de20
-    - name: Main ship weapon - Projectile - Zapper_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -335,7 +335,7 @@ ScriptedImporter:
         width: 6
         height: 96
       spriteId: 1a0325652d97819458b743dba332d7e5
-    - name: Main ship weapon - Projectile - Zapper_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -344,7 +344,7 @@ ScriptedImporter:
         width: 6
         height: 96
       spriteId: a742fc59ad835e84d8c62d95bff2e925
-    - name: Main ship weapon - Projectile - Zapper_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -353,7 +353,7 @@ ScriptedImporter:
         width: 6
         height: 96
       spriteId: 7484231ce4ab1fb43848ab4b00217d56
-    - name: Main ship weapon - Projectile - Zapper_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:

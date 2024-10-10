@@ -270,7 +270,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Asteroid 01 - Explode_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -279,7 +279,7 @@ ScriptedImporter:
         width: 46
         height: 39
       spriteId: 48a729da92a8dce44b0980ddfe2cb2cc
-    - name: Asteroid 01 - Explode_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -288,7 +288,7 @@ ScriptedImporter:
         width: 65
         height: 60
       spriteId: 73d66f542fcb33241b58e5dba4ea4ffa
-    - name: Asteroid 01 - Explode_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -297,7 +297,7 @@ ScriptedImporter:
         width: 78
         height: 75
       spriteId: 96aa4859d3e043b4c89bd24b6e89db74
-    - name: Asteroid 01 - Explode_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -306,7 +306,7 @@ ScriptedImporter:
         width: 89
         height: 86
       spriteId: 622148f1b44a79844bef378189a250eb
-    - name: Asteroid 01 - Explode_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -315,7 +315,7 @@ ScriptedImporter:
         width: 92
         height: 93
       spriteId: b73a9e205d69f394db5061ae80283055
-    - name: Asteroid 01 - Explode_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -324,7 +324,7 @@ ScriptedImporter:
         width: 38
         height: 33
       spriteId: c7e2b74e540e69641b269f3a31871461
-    - name: Asteroid 01 - Explode_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:

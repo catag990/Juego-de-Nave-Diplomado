@@ -56,6 +56,12 @@ public class Bullet : MonoBehaviour
                 
 
             }
+            else if (collision.gameObject.CompareTag("EnemyPlane")){
+                Destroy(collision.gameObject);
+                player.points += 10;
+
+                Destroy(this.gameObject);
+            }
         }
     }
 

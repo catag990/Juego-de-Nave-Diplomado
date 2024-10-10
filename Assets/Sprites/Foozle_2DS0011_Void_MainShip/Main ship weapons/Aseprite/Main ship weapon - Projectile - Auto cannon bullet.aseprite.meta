@@ -210,7 +210,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main ship weapon - Projectile - Auto cannon bullet_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -219,7 +219,7 @@ ScriptedImporter:
         width: 10
         height: 17
       spriteId: 4a974ff4ec9cb7d4e8c17ca056cf7980
-    - name: Main ship weapon - Projectile - Auto cannon bullet_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -228,7 +228,7 @@ ScriptedImporter:
         width: 10
         height: 16
       spriteId: 6da4bf8ced8949a4080abbffcf2615a2
-    - name: Main ship weapon - Projectile - Auto cannon bullet_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -237,7 +237,7 @@ ScriptedImporter:
         width: 10
         height: 17
       spriteId: 510f8fc9882c1914fb35cc2a8c81cc8c
-    - name: Main ship weapon - Projectile - Auto cannon bullet_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:

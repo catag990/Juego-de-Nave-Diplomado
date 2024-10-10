@@ -250,7 +250,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Main Ship - Shields - Front and Side Shield_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -259,7 +259,7 @@ ScriptedImporter:
         width: 50
         height: 32
       spriteId: 5921622efbfaec94d8071e974f2bfcf6
-    - name: Main Ship - Shields - Front and Side Shield_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -268,7 +268,7 @@ ScriptedImporter:
         width: 50
         height: 32
       spriteId: aae9c9bbf6e66834a8e7fda7df105cfa
-    - name: Main Ship - Shields - Front and Side Shield_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -277,7 +277,7 @@ ScriptedImporter:
         width: 50
         height: 32
       spriteId: 3ff6b4fadb00b7b4590b454613b4e7c5
-    - name: Main Ship - Shields - Front and Side Shield_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -286,7 +286,7 @@ ScriptedImporter:
         width: 50
         height: 32
       spriteId: 9a8afd4d4bff0c3488a87272583cdb98
-    - name: Main Ship - Shields - Front and Side Shield_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -295,7 +295,7 @@ ScriptedImporter:
         width: 50
         height: 32
       spriteId: 80836e3988722a74a834bb256b95b29e
-    - name: Main Ship - Shields - Front and Side Shield_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
