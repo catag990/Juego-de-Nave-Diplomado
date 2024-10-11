@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 3128517148673672033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6566e-10, y: -0.871, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalPosition: {x: -0.0854, y: -2.1481, z: 0}
+  m_LocalScale: {x: 5.4507074, y: 6.040591, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2125849301590706500}
@@ -213,6 +213,7 @@ MonoBehaviour:
   shields: 3
   canFire: 0
   shieldDuration: 5
+  powerUpInUse: 0
   BulletPref: {fileID: 8495771403201648079, guid: 6c5e1e25e8d7da848a54fa64c62d9841, type: 3}
   Shield: {fileID: 3128517148673672033}
   Weapons: []

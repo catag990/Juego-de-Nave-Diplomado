@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class GameManager : MonoBehaviour
     public float time = 0.0f;
     public float timePU = 0.0f;
     public Player player;
+
+    public Image[] lifeIcons;  // Arreglo para las imágenes de vida
+    public Sprite fullLifeIcon; // Ícono cuando la vida está llena
+    public Sprite emptyLifeIcon;
+
     public TextMeshProUGUI LifeText;
     public TextMeshProUGUI ShieldText;
     public TextMeshProUGUI WeaponText;
@@ -24,6 +30,8 @@ public class GameManager : MonoBehaviour
     {
         
         player.weaponName = "bala";
+
+        UpdateLifeIcons();
     }
 
     // Update is called once per frame
@@ -32,11 +40,12 @@ public class GameManager : MonoBehaviour
         CreateEnemy();
         UpdateCanvas();
         CreatePowerUp();
+        UpdateLifeIcons();
     }
 
     void UpdateCanvas()
     {
-        LifeText.text = "vidas: " + player.lives;
+        //LifeText.text = "vidas: " + player.lives;
         ShieldText.text = "escudos: " + player.shields;
         WeaponText.text = "arma: " + player.weaponName;
         PointsText.text = "puntos: " + player.points;
@@ -55,16 +64,38 @@ public class GameManager : MonoBehaviour
     }
 
     private void CreatePowerUp(){
+        
         var cam = Camera.main;
         float xMax = cam.orthographicSize * cam.aspect;
         float yMax = cam.orthographicSize;
         timePU += Time.deltaTime;
-        if (timePU > spawnTime*2){
-            
+
+        if (timePU > spawnTime * 6)
+        {
+
             Instantiate(powerUpPrefab, new Vector3(Random.Range(-xMax, xMax), Random.Range(-yMax, yMax), 0), Quaternion.identity);
             timePU = 0.0f;
         }
-
+        
     }
-    
+
+    void UpdateLifeIcons()
+    {
+      
+               
+        for (int i = 0; i < lifeIcons.Length; i++)
+        {
+            if (i < player.lives)
+            {
+                lifeIcons[i].sprite = fullLifeIcon; // Ícono de vida llena
+            }
+            else
+            {
+                lifeIcons[i].sprite = emptyLifeIcon; // Ícono de vida vacía
+            }
+
+            
+        }
+    }
+
 }

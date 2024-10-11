@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //Variables
-    public float speed = 5.0f;
+    public float speed = 7.0f;
     public float fireRate = 0.025f;
     public int lives = 4;
     public int shields = 3;
@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public float shieldDuration = 5.0f;
 
     public bool powerUpInUse = false;
+    public float powerUpTime = 5.0f;
 
     public GameObject BulletPref; //Bala que se va a disparar
 
@@ -59,6 +60,16 @@ public class Player : MonoBehaviour
         ChangeWeapon();
         UseShields();
         Fire();
+
+        if (powerUpInUse) {
+            speed = 14.0f;
+            powerUpTime -= Time.deltaTime;
+            if (powerUpTime <= 0)
+            {
+                powerUpInUse = false;
+                speed = 7.0f;
+            }
+}
         
     }
 
@@ -193,7 +204,7 @@ public class Player : MonoBehaviour
 
     void ChangeShipState() { 
         var currentState = shipState;
-        Debug.Log(currentState);   
+   
 
         var newSprite = shipSprites.Find(x => x.name == currentState.ToString());
 
@@ -218,7 +229,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+    public void ActivatePowerUp()
+    {
+        powerUpInUse = true;
+        powerUpTime = 5.0f; // Inicia el temporizador del power-up
+    }
+
+
 
 
 }
