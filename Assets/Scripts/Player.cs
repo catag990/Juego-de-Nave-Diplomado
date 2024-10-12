@@ -178,7 +178,7 @@ public class Player : MonoBehaviour
     {
         if (collision != null)
         {
-            if (collision.gameObject.CompareTag("Enemy")) {
+            if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyBullet")) {
                 Destroy(collision.gameObject);
 
                 if (ShieldInUse) { 
@@ -199,6 +199,7 @@ public class Player : MonoBehaviour
                     Destroy(this.gameObject);
                 }
             }
+    
         }
     }
 

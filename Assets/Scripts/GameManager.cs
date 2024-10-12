@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
+    public GameObject enemyPlanePrefab;
     public GameObject powerUpPrefab;
     public float spawnTime = 1.5f;
     public float time = 0.0f;
+    public float timePlane = 0.0f;
     public float timePU = 0.0f;
     public Player player;
 
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour
         UpdateCanvas();
         CreatePowerUp();
         UpdateLifeIcons();
+        CreateEnemyPlane();
     }
 
     void UpdateCanvas()
@@ -60,6 +63,17 @@ public class GameManager : MonoBehaviour
 
             Instantiate(enemyPrefab, new Vector3(Random.Range(-6.0f, 6.0f), 3.0f, 0), Quaternion.identity);
             time = 0.0f;
+        }
+    }
+
+    private void CreateEnemyPlane()
+    {
+        timePlane += Time.deltaTime;
+        if (timePlane > spawnTime*10)
+        {
+
+            Instantiate(enemyPlanePrefab, new Vector3(Random.Range(-6.0f, 6.0f), 3.0f, 0), Quaternion.identity);
+            timePlane = 0.0f;
         }
     }
 

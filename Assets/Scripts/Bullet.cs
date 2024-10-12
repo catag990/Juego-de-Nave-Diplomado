@@ -53,8 +53,13 @@ public class Bullet : MonoBehaviour
 
                 Destroy(this.gameObject);
             
-                
-
+            }
+            if (collision.gameObject.CompareTag("EnemyPlane")) {
+                EnemyPlane enemyPlane = collision.gameObject.GetComponent<EnemyPlane>();
+                if (enemyPlane != null) {
+                    enemyPlane.takeDamage();
+                    Destroy(this.gameObject);
+                }
             }
         }
     }
